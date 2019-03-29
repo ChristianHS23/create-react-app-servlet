@@ -12,7 +12,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <npm.output.directory>/var/lib/docker/volumes/jenkins_home/_data/workspace/create-react-app</npm.output.directory>
+        <npm.output.directory>build</npm.output.directory>
     </properties>
 
     <build>
