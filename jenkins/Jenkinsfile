@@ -33,6 +33,7 @@ pipeline {
                 }
             }
             steps {
+                sh 'sudo su'
                 sh 'mvn --version'
                 sh 'mvn package -e --file /var/lib/docker/volumes/jenkins_home/_data/workspace/create-react-app'
                 sh './jenkins/scripts/buildmaven.sh'
