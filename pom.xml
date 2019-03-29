@@ -12,6 +12,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.exec.skip>false</maven.exec.skip>
         <npm.output.directory>build</npm.output.directory>
     </properties>
 
@@ -51,6 +52,7 @@
                             <arguments>
                                 <argument>install</argument>
                             </arguments>
+                            <skip>${maven.exec.skip}</skip>
                         </configuration>
                     </execution>
                     <!-- Required: The following will ensure `npm install` is called
@@ -66,6 +68,7 @@
                             <arguments>
                                 <argument>install</argument>
                             </arguments>
+                            <skip>${maven.exec.skip}</skip>
                         </configuration>
                     </execution>
 
@@ -84,6 +87,7 @@
                                 <argument>run</argument>
                                 <argument>build</argument>
                             </arguments>
+                            <skip>${maven.exec.skip}</skip>
                         </configuration>
                     </execution>
 
